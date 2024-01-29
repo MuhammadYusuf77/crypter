@@ -1,0 +1,16 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    font-family: 'Inter', 'Arial', sans-serif;
+}
+
+img {
+    vertical-align: middle;
+    object-fit: contain;
+}

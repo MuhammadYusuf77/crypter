@@ -1,0 +1,128 @@
+.hero {
+    margin-bottom: 64px;
+    margin-top: 64px;
+}
+
+.container {}
+
+.hero__inner {
+    display: flex;
+    gap: 40px;
+}
+
+.hero-left {
+    width: 636px;
+}
+
+.hero-left__title {
+    margin-bottom: 32px;
+    color: var(--Neutral-07, #202025);
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 133.333%;
+    letter-spacing: -0.48px;
+}
+
+.hero-left__form {
+    display: flex;
+    gap: 16px;
+}
+
+.hero-left__form-label {
+    width: 147px;
+    display: flex;
+    padding: 18px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex: 1 0 0;
+    border-radius: 4px;
+    border: 2px solid var(--Accent-1-shade-2, #E1E2E2);
+
+    &:hover {
+        border: 2px solid var(--Accent-1-shade-2, #1966F7);
+    }
+}
+
+.hero-left__form-label__input {}
+
+.hero-right {
+    width: 636px;
+}
+
+.hero-right__title {
+    margin-bottom: 32px;
+    color: var(--Neutral-07, #202025);
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 133.333%;
+    letter-spacing: -0.48px;
+}
+
+.hero-right__main {
+    display: flex;
+    gap: 16px;
+}
+
+.hero-right__main-btn {
+    display: flex;
+    padding: 12px 24px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex: 1 0 0;
+    background-color: #fff;
+    border: 2px solid var(--Neutral-03, #E1E2E2);
+    color: var(--Neutral-07, #202025);
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 200%;
+    letter-spacing: -0.18px;
+
+    &:hover {
+        background-color: #000;
+        color: #fff;
+        border-radius: 4px;
+    }
+}
+
+@media only screen and (max-width: 944px) {
+    .hero__inner {
+        flex-direction: column;
+    }
+
+    .hero-left {
+        width: 940px;
+    }
+
+    .hero-left__form-label {
+        width: 224px;
+        padding: 18px 24px;
+        color: var(--Neutral-07, #202025);
+
+        /* Base/L */
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 24px;
+        /* 150% */
+        letter-spacing: -0.16px;
+    }
+
+    .hero-right__main-btn {
+        width: 304px;
+        padding: 12px 137px;
+    }
+
+    .hero-right {
+        width: 940px;
+    }
+}
